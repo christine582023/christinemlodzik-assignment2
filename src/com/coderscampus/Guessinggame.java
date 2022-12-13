@@ -27,7 +27,7 @@ public class Guessinggame {
 			
 			int playerGuess = scanner.nextInt();
 			
-			if (playerTries < 6)
+			if (playerTries < 5)
 			{
 				if (playerGuess == randomNumber) {
 					System.out.println("YOU WIN!!!!");
