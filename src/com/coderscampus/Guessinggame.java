@@ -20,10 +20,12 @@ public class Guessinggame {
 //		below is for testing purposes only 
 //		System.out.println(randomNumber);
 //		System.out.println("**************");
+		
+		int playerGuess = 0;
 	
 		while (playerTries < 5) {	
 			System.out.println("Pick a number between 1 and 100:" + WHITE_SPACE);
-			int playerGuess = scanner.nextInt();
+			playerGuess = scanner.nextInt();
 			
 			if (playerGuess < 1 || playerGuess > 100) { 
 				System.out.println("Your guess is not between 1 and 100, please try again.");
@@ -44,10 +46,15 @@ public class Guessinggame {
 				System.out.println("Please pick a lower number.");
 				System.out.println("----------------------------");
 			}
-		}
-	}			
+			
 			if (playerTries == 5) {
 				System.out.println("You lose. The number to guess was" + WHITE_SPACE + randomNumber + ".");
+	
+		}
+//			scanner.close();
+	}			
+//			if (playerTries == 5 && playerGuess != randomNumber) {
+//				System.out.println("You lose. The number to guess was" + WHITE_SPACE + randomNumber + ".");
 	
 			}
 		}
