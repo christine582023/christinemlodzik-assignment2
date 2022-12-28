@@ -50,8 +50,9 @@ public class Guessinggame {
 			if (playerTries == 5) {
 				System.out.println("You lose. The number to guess was" + WHITE_SPACE + randomNumber + ".");
 	
+				scanner.close();
 		}
-//			scanner.close();
+
 	}			
 //			if (playerTries == 5 && playerGuess != randomNumber) {
 //				System.out.println("You lose. The number to guess was" + WHITE_SPACE + randomNumber + ".");
